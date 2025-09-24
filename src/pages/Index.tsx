@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import WhatsAppMockup from "@/components/WhatsAppMockup";
 import { CheckCircle, MessageSquare, Shield, Package, Star, BarChart3, Clock, Smartphone, Users, Settings, DollarSign, FileText } from "lucide-react";
 
 const Index = () => {
@@ -291,36 +292,9 @@ const Index = () => {
             </p>
           </div>
           
-          {/* WhatsApp Mockup */}
+          {/* WhatsApp Interactive Mockup */}
           <div className="lg:col-span-5">
-            <Card className="tamara-card">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl tamara-gradient text-white flex items-center justify-center font-bold">
-                  WA
-                </div>
-                <div>
-                  <p className="text-sm font-semibold">Guest Flow – Check-out Feedback</p>
-                  <p className="text-xs text-muted-foreground">Live on WhatsApp</p>
-                </div>
-              </div>
-              <div className="space-y-3 text-sm">
-                <div className="rounded-2xl p-3 bg-accent w-fit max-w-full">
-                  Selamat datang di Hotel XYZ 🌸 Pilih menu: 1) Info 2) Housekeeping 3) Room Service 4) Keluhan 5) Feedback 99) Emergency
-                </div>
-                <div className="rounded-2xl p-3 tamara-gradient text-white w-fit max-w-full ml-auto">
-                  5
-                </div>
-                <div className="rounded-2xl p-3 bg-accent w-fit max-w-full">
-                  Terima kasih 🙏 Beri rating (1–5).
-                </div>
-                <div className="rounded-2xl p-3 tamara-gradient text-white w-fit max-w-full ml-auto">
-                  4
-                </div>
-                <div className="rounded-2xl p-3 bg-accent w-fit max-w-full">
-                  Terima kasih 😊 Komentar singkat?
-                </div>
-              </div>
-            </Card>
+            <WhatsAppMockup />
           </div>
         </section>
 
