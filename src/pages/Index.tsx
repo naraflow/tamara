@@ -287,9 +287,20 @@ const Index = () => {
                 <a href="#features">{t('cta.learn')}</a>
               </Button>
             </div>
-            <p className="mt-4 text-sm text-muted-foreground">
-              {t('hero.compliance')}
-            </p>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+              <div className="flex items-center gap-2 bg-accent/50 rounded-full px-3 py-2">
+                <CheckCircle className="w-4 h-4 text-tamara-primary flex-shrink-0" />
+                <span className="text-foreground">GDPR Compliant</span>
+              </div>
+              <div className="flex items-center gap-2 bg-accent/50 rounded-full px-3 py-2">
+                <CheckCircle className="w-4 h-4 text-tamara-primary flex-shrink-0" />
+                <span className="text-foreground">Low Bandwidth</span>
+              </div>
+              <div className="flex items-center gap-2 bg-accent/50 rounded-full px-3 py-2">
+                <CheckCircle className="w-4 h-4 text-tamara-primary flex-shrink-0" />
+                <span className="text-foreground">Full Audit Trail</span>
+              </div>
+            </div>
           </div>
           
           {/* WhatsApp Interactive Mockup */}
