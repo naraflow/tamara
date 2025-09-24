@@ -67,10 +67,16 @@ const Index = () => {
       
       // Metrics
       'metrics.title': 'Dampak yang Ditargetkan',
-      'metrics.m1': 'Waktu respon housekeeping → supervisor',
-      'metrics.m2': 'Selisih kas harian (fraud kecil)',
-      'metrics.m3': 'Response rate feedback tamu',
-      'metrics.m4': 'Cukup WhatsApp—multi-device, low-bandwidth',
+      'metrics.subtitle': 'Chatbot Tamara adalah alat utama TambakFlow untuk mencapai dampak positif pada operasional dan pengalaman tamu hotel.',
+      'metrics.guestTitle': 'Peningkatan Kepuasan Tamu',
+      'metrics.guest1': 'Respons Cepat: Tamu mendapatkan informasi dan layanan secara instan, 24/7, tanpa harus menunggu staf.',
+      'metrics.guest2': 'Keluhan Mudah: Tamu bisa melaporkan masalah via WhatsApp, yang membuat prosesnya lebih mudah dan cepat ditangani.',
+      'metrics.opsTitle': 'Peningkatan Efisiensi Operasional',
+      'metrics.ops1': 'Otomatisasi Tugas: Permintaan tamu (seperti housekeeping dan room service) langsung tercatat dan diteruskan ke staf terkait secara otomatis.',
+      'metrics.ops2': 'Pengumpulan Data: Sistem mengumpulkan feedback dan keluhan secara langsung, memberikan data berharga untuk perbaikan layanan.',
+      'metrics.costTitle': 'Pengurangan Biaya & Risiko',
+      'metrics.cost1': 'Tanpa Aplikasi: Tidak ada biaya tambahan karena semua berjalan di WhatsApp.',
+      'metrics.cost2': 'Pencegahan Kecurangan: Alur Room Service yang terintegrasi dengan simulasi pembayaran mengurangi risiko kesalahan atau kecurangan.',
       
       // About
       'about.title': 'Tentang Tamara',
@@ -88,6 +94,8 @@ const Index = () => {
       // Contact
       'contact.title': 'Siap Tingkatkan Efisiensi Hotel Anda?',
       'contact.text': 'Diskusikan kebutuhan Anda dengan kami. Dapatkan demo alur WhatsApp yang sesuai SOP hotel Anda.',
+      'contact.email': 'Email: hello@naraflow.id',
+      'contact.linkedin': 'LinkedIn: @naraflow-id',
       
       // Footer
       'footer.tag': 'WhatsApp-first workflow untuk operasional hotel.',
@@ -152,10 +160,16 @@ const Index = () => {
       
       // Metrics
       'metrics.title': 'Targeted Impact',
-      'metrics.m1': 'Housekeeping → supervisor response time',
-      'metrics.m2': 'Daily cash discrepancy (petty fraud)',
-      'metrics.m3': 'Guest feedback response rate',
-      'metrics.m4': 'Zero new apps—WhatsApp only',
+      'metrics.subtitle': 'Tamara chatbot is TambakFlow\'s primary tool to achieve positive impact on hotel operations and guest experience.',
+      'metrics.guestTitle': 'Enhanced Guest Satisfaction',
+      'metrics.guest1': 'Instant Response: Guests get information and services instantly, 24/7, without waiting for staff.',
+      'metrics.guest2': 'Easy Complaints: Guests can report issues via WhatsApp, making the process easier and faster to handle.',
+      'metrics.opsTitle': 'Improved Operational Efficiency',
+      'metrics.ops1': 'Task Automation: Guest requests (like housekeeping and room service) are automatically recorded and forwarded to relevant staff.',
+      'metrics.ops2': 'Data Collection: System collects feedback and complaints directly, providing valuable data for service improvement.',
+      'metrics.costTitle': 'Cost Reduction & Risk Mitigation',
+      'metrics.cost1': 'No App Required: No additional costs as everything runs on WhatsApp.',
+      'metrics.cost2': 'Fraud Prevention: Integrated Room Service flow with payment simulation reduces risk of errors or fraud.',
       
       // About
       'about.title': 'About Tamara',
@@ -173,6 +187,8 @@ const Index = () => {
       // Contact
       'contact.title': 'Ready to Boost Your Hotel\'s Efficiency?',
       'contact.text': 'Tell us your needs. Get a demo flow on WhatsApp tailored to your SOPs.',
+      'contact.email': 'Email: hello@naraflow.id',
+      'contact.linkedin': 'LinkedIn: @naraflow-id',
       
       // Footer
       'footer.tag': 'WhatsApp-first workflows for hotel operations.',
@@ -199,9 +215,6 @@ const Index = () => {
       <header className="sticky top-0 z-50 bg-card/90 backdrop-blur-sm border-b border-border">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg tamara-gradient text-white flex items-center justify-center font-bold text-sm">
-              T
-            </div>
             <span className="text-xl sm:text-2xl font-extrabold tamara-text">Tamara</span>
           </a>
 
@@ -307,6 +320,16 @@ const Index = () => {
           <div className="lg:col-span-5">
             <WhatsAppMockup />
           </div>
+        </section>
+
+        {/* About Section */}
+        <section id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-center tamara-text">
+            {t('about.title')}
+          </h2>
+          <p className="mt-4 text-foreground text-lg text-center">
+            {t('about.text')}
+          </p>
         </section>
 
         {/* Features Section */}
@@ -436,38 +459,68 @@ const Index = () => {
         {/* Metrics Section */}
         <section className="bg-card border-y border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-center tamara-text">
-              {t('metrics.title')}
-            </h2>
-            <div className="mt-10 grid gap-6 md:grid-cols-4">
-              <Card className="p-6 text-center">
-                <p className="text-4xl font-extrabold tamara-text">50%↓</p>
-                <p className="text-muted-foreground mt-1">{t('metrics.m1')}</p>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-extrabold tamara-text mb-4">
+                {t('metrics.title')}
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                {t('metrics.subtitle')}
+              </p>
+            </div>
+            
+            <div className="grid gap-8 md:grid-cols-3">
+              {/* Guest Satisfaction */}
+              <Card className="p-6">
+                <h3 className="text-xl font-bold tamara-text mb-4">
+                  {t('metrics.guestTitle')}
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-muted-foreground">{t('metrics.guest1')}</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-muted-foreground">{t('metrics.guest2')}</p>
+                  </div>
+                </div>
               </Card>
-              <Card className="p-6 text-center">
-                <p className="text-4xl font-extrabold tamara-text">&lt;1%</p>
-                <p className="text-muted-foreground mt-1">{t('metrics.m2')}</p>
+
+              {/* Operational Efficiency */}
+              <Card className="p-6">
+                <h3 className="text-xl font-bold tamara-text mb-4">
+                  {t('metrics.opsTitle')}
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-muted-foreground">{t('metrics.ops1')}</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-muted-foreground">{t('metrics.ops2')}</p>
+                  </div>
+                </div>
               </Card>
-              <Card className="p-6 text-center">
-                <p className="text-4xl font-extrabold tamara-text">60%+</p>
-                <p className="text-muted-foreground mt-1">{t('metrics.m3')}</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <p className="text-4xl font-extrabold tamara-text">0 App</p>
-                <p className="text-muted-foreground mt-1">{t('metrics.m4')}</p>
+
+              {/* Cost Reduction */}
+              <Card className="p-6">
+                <h3 className="text-xl font-bold tamara-text mb-4">
+                  {t('metrics.costTitle')}
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-muted-foreground">{t('metrics.cost1')}</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-muted-foreground">{t('metrics.cost2')}</p>
+                  </div>
+                </div>
               </Card>
             </div>
           </div>
-        </section>
-
-        {/* About Section */}
-        <section id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-center tamara-text">
-            {t('about.title')}
-          </h2>
-          <p className="mt-4 text-foreground text-lg text-center">
-            {t('about.text')}
-          </p>
         </section>
 
         {/* FAQ Section */}
@@ -517,6 +570,14 @@ const Index = () => {
             <p className="mt-3 text-muted-foreground text-lg">
               {t('contact.text')}
             </p>
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-muted-foreground">
+              <a href="mailto:hello@naraflow.id" className="hover:text-tamara-primary transition-colors">
+                {t('contact.email')}
+              </a>
+              <a href="https://www.linkedin.com/company/naraflow-id/" target="_blank" rel="noopener" className="hover:text-tamara-primary transition-colors">
+                {t('contact.linkedin')}
+              </a>
+            </div>
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
               <Button asChild size="lg" className="tamara-gradient">
                 <a href={whatsappUrl} target="_blank" rel="noopener">
