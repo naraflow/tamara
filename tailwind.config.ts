@@ -27,6 +27,14 @@ export default {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        tamara: {
+          DEFAULT: "hsl(var(--tamara-primary))",
+          primary: "hsl(var(--tamara-primary))",
+          light: "hsl(var(--tamara-light))",
+          hover: "hsl(var(--tamara-hover))",
+          50: "hsl(var(--tamara-50))",
+          100: "hsl(var(--tamara-100))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
