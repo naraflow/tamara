@@ -27,24 +27,24 @@ const Index = () => {
       
       // Features
       'features.title': 'Fitur Utama',
-      'features.subtitle': 'Didesain dari alur kerja nyata hotel non-bintang, guest house, dan villa.',
+      'features.subtitle': 'Sistem operasional hotel via WhatsApp yang simpel dan efektif.',
       'features.stdTitle': 'Alur Kerja Terstandar',
-      'features.stdText': 'Housekeeping, maintenance, front desk, inventory, finance—semua tercatat rapi, seragam, dan bisa diaudit.',
+      'features.stdText': 'Semua aktivitas housekeeping, maintenance, dan front desk tercatat otomatis dan bisa diaudit kapan saja.',
       'features.rtTitle': 'Laporan Real-time',
-      'features.rtText': 'Status kamar, keluhan, dan kas harian tersinkron otomatis—langsung dari WhatsApp.',
-      'features.fbTitle': 'Feedback Tamu Organik',
-      'features.fbText': 'Tamu opt-in untuk layanan; saat check-out, rating 1–5 + komentar tersimpan dan alert otomatis ke supervisor ≤3.',
+      'features.rtText': 'Status kamar, keluhan tamu, dan laporan kas tersinkron otomatis lewat WhatsApp.',
+      'features.fbTitle': 'Feedback Tamu',
+      'features.fbText': 'Tamu bisa lapor masalah atau kasih rating langsung via WhatsApp. Rating rendah langsung alert supervisor.',
       'features.mgrTitle': 'Dashboard SLA',
-      'features.mgrText': 'Waktu respons work order 45 detik, tingkat penyelesaian HK 96%, waktu perbaikan ENG 55 menit, akurasi klasifikasi 98.5%, kepuasan tamu 4.7/5.',
+      'features.mgrText': 'Monitor performa real-time: respons 45 detik, penyelesaian 96%, kepuasan tamu 4.7/5.',
       
       // How it Works
       'how.title': 'Cara Kerja',
-      'how.step1t': 'Tamu Opt-in via QR/Link',
-      'how.step1d': 'QR di resepsionis/kamar atau link dari OTA. Tamu memulai chat WhatsApp untuk akses layanan.',
-      'how.step2t': 'Staf Input → Supervisor Verifikasi',
-      'how.step2d': 'Housekeeping/maintenance/front desk input terstruktur; supervisor approve/reject; notifikasi otomatis.',
-      'how.step3t': 'Manager Digest & Insight',
-      'how.step3d': 'Ringkasan harian via WA; minta detail PDF/Excel kapan saja; semua ada audit trail.',
+      'how.step1t': 'Tamu Scan QR atau Klik Link',
+      'how.step1d': 'Tamu mulai chat WhatsApp untuk akses layanan hotel.',
+      'how.step2t': 'Staf Input, Supervisor Approve',
+      'how.step2d': 'Request otomatis masuk ke departemen yang tepat dan supervisor bisa approve/reject langsung.',
+      'how.step3t': 'Manager Lihat Dashboard',
+      'how.step3d': 'Monitor performa real-time: waktu respons, tingkat penyelesaian, dan kepuasan tamu.',
       
       // Roles
       'roles.title': 'Peran & Alur Singkat',
@@ -76,7 +76,7 @@ const Index = () => {
       
       // About
       'about.title': 'Tentang Tamara',
-      'about.text': 'Kami membantu hotel kecil–menengah naik kelas dengan workflow sederhana namun kuat. Fokus kami: efisiensi operasional, transparansi, dan pengalaman tamu yang konsisten—tanpa membebani staf dengan aplikasi baru.',
+      'about.text': 'Sistem operasional hotel via WhatsApp. Simpel, efisien, tanpa aplikasi baru untuk staf Anda.',
       
       // FAQ
       'faq.title': 'Pertanyaan Umum',
@@ -116,24 +116,24 @@ const Index = () => {
       
       // Features
       'features.title': 'Key Features',
-      'features.subtitle': 'Built from real workflows of budget hotels, guest houses, and villas.',
+      'features.subtitle': 'Simple and effective hotel operations via WhatsApp.',
       'features.stdTitle': 'Standardized Workflows',
-      'features.stdText': 'Housekeeping, maintenance, front desk, inventory, finance—recorded neatly, consistently, and auditable.',
+      'features.stdText': 'All housekeeping, maintenance, and front desk activities are automatically recorded and auditable anytime.',
       'features.rtTitle': 'Real-time Reporting',
-      'features.rtText': 'Room status, complaints, and daily cash sync automatically—from WhatsApp.',
-      'features.fbTitle': 'Organic Guest Feedback',
-      'features.fbText': 'Guests opt-in for services; at check-out they rate 1–5 with comments; low ratings alert supervisors.',
+      'features.rtText': 'Room status, guest complaints, and cash reports sync automatically via WhatsApp.',
+      'features.fbTitle': 'Guest Feedback',
+      'features.fbText': 'Guests report issues or give ratings directly via WhatsApp. Low ratings instantly alert supervisors.',
       'features.mgrTitle': 'SLA Dashboard',
-      'features.mgrText': 'Work order response time 45 seconds, HK completion rate 96%, ENG repair time 55 minutes, classification accuracy 98.5%, guest satisfaction 4.7/5.',
+      'features.mgrText': 'Monitor real-time performance: 45-second response, 96% completion rate, 4.7/5 guest satisfaction.',
       
       // How it Works
       'how.title': 'How it Works',
-      'how.step1t': 'Guest Opt-in via QR/Link',
-      'how.step1d': 'QR at lobby/room or OTA link. Guest starts WhatsApp chat to access services.',
-      'how.step2t': 'Staff Input → Supervisor Verify',
-      'how.step2d': 'Structured inputs; supervisor approve/reject; notifications and routing are automatic.',
-      'how.step3t': 'Manager Digest & Insight',
-      'how.step3d': 'Daily summary via WhatsApp; request detailed PDF/Excel anytime; full audit trail.',
+      'how.step1t': 'Guest Scans QR or Clicks Link',
+      'how.step1d': 'Guest starts WhatsApp chat to access hotel services.',
+      'how.step2t': 'Staff Input, Supervisor Approves',
+      'how.step2d': 'Requests automatically routed to the right department and supervisors can approve/reject instantly.',
+      'how.step3t': 'Manager Views Dashboard',
+      'how.step3d': 'Monitor real-time performance: response times, completion rates, and guest satisfaction.',
       
       // Roles
       'roles.title': 'Roles & Quick Flows',
@@ -165,7 +165,7 @@ const Index = () => {
       
       // About
       'about.title': 'About Tamara',
-      'about.text': 'We help small & mid-size hotels level up with simple yet powerful workflows—driving efficiency, transparency, and consistent guest experience without burdening staff with new apps.',
+      'about.text': 'Hotel operations system via WhatsApp. Simple, efficient, no new apps for your staff.',
       
       // FAQ
       'faq.title': 'FAQ',
