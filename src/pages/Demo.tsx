@@ -34,10 +34,13 @@ const Demo = () => {
               Kembali ke Home
             </Link>
           </Button>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
+            {/* Modern flat design logo */}
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="8" fill="hsl(var(--tamara-primary))"/>
-              <path d="M16 8c-1.38 0-2.5 1.12-2.5 2.5V14h5V10.5C18.5 9.12 17.38 8 16 8ZM11 16.5C11 15.12 12.12 14 13.5 14h5c1.38 0 2.5 1.12 2.5 2.5V20H11v-3.5ZM9 22v3h14v-3H9Z" fill="white"/>
+              <rect width="32" height="32" rx="8" fill="hsl(var(--tamara-primary))" />
+              <path d="M16 10C14.9 10 14 10.9 14 12V14H18V12C18 10.9 17.1 10 16 10Z" fill="white" />
+              <path d="M12 16C12 14.9 12.9 14 14 14H18C19.1 14 20 14.9 20 16V20H12V16Z" fill="white" />
+              <rect x="10" y="21" width="12" height="2" rx="1" fill="white" />
             </svg>
             <span className="text-xl font-bold text-tamara-primary">Tamara Demo</span>
           </div>

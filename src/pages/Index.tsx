@@ -214,7 +214,14 @@ const Index = () => {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-card/90 backdrop-blur-sm border-b border-border">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2">
+          <a href="#" className="flex items-center gap-3">
+            {/* Modern flat design logo */}
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="hsl(var(--tamara-primary))" />
+              <path d="M16 10C14.9 10 14 10.9 14 12V14H18V12C18 10.9 17.1 10 16 10Z" fill="white" />
+              <path d="M12 16C12 14.9 12.9 14 14 14H18C19.1 14 20 14.9 20 16V20H12V16Z" fill="white" />
+              <rect x="10" y="21" width="12" height="2" rx="1" fill="white" />
+            </svg>
             <span className="text-xl sm:text-2xl font-extrabold tamara-text">Tamara</span>
           </a>
 
@@ -596,10 +603,14 @@ const Index = () => {
       <footer className="tamara-gradient text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div>
-            <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-lg bg-white/20 text-white flex items-center justify-center font-bold text-sm">
-                T
-              </div>
+            <div className="flex items-center gap-3">
+              {/* Modern flat design logo */}
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="8" fill="white" fillOpacity="0.2" />
+                <path d="M16 10C14.9 10 14 10.9 14 12V14H18V12C18 10.9 17.1 10 16 10Z" fill="white" />
+                <path d="M12 16C12 14.9 12.9 14 14 14H18C19.1 14 20 14.9 20 16V20H12V16Z" fill="white" />
+                <rect x="10" y="21" width="12" height="2" rx="1" fill="white" />
+              </svg>
               <span className="text-lg font-extrabold">Tamara</span>
             </div>
             <p className="mt-3 text-white/80 text-sm">{t('footer.tag')}</p>
