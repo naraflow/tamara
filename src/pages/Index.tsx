@@ -286,7 +286,7 @@ const Index = () => {
               {t('hero.title')}
             </h1>
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Button asChild size="lg" className="group relative overflow-hidden bg-tamara-600 text-white border-3 border-tamara-700 hover:bg-tamara-700 hover:border-tamara-800 transition-all duration-300 hover:scale-110 hover:shadow-2xl min-w-[240px] h-16 text-lg font-bold">
+              <Button asChild size="lg" className="group relative overflow-hidden bg-yellow-200 text-gray-900 border-3 border-yellow-300 hover:bg-yellow-300 hover:border-yellow-400 transition-all duration-300 hover:scale-110 hover:shadow-2xl min-w-[240px] h-16 text-lg font-bold">
                 <Link to="/demo" className="flex items-center gap-3">
                   <div className="w-6 h-6 transition-transform group-hover:rotate-12">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -299,11 +299,11 @@ const Index = () => {
                 </Link>
               </Button>
               
-              <Button asChild size="lg" className="group relative overflow-hidden tamara-gradient shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(34,197,94,0.5)] transition-all duration-300 hover:scale-110 min-w-[240px] h-16 text-lg font-bold ring-4 ring-tamara-primary/20">
+              <Button asChild size="lg" className="group relative overflow-hidden bg-gradient-to-r from-yellow-300 to-yellow-400 text-gray-900 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(250,204,21,0.6)] transition-all duration-300 hover:scale-110 min-w-[240px] h-16 text-lg font-bold ring-4 ring-yellow-200/40">
                 <a href={whatsappUrl} target="_blank" rel="noopener" className="flex items-center gap-3">
                   <div className="w-6 h-6 transition-transform group-hover:scale-125 group-hover:rotate-6">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-bold text-lg">{t('cta.whatsapp')}</span>
