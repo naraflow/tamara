@@ -342,7 +342,7 @@ const Index = () => {
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-2">{t('features.stdTitle')}</h3>
-              <p className="text-muted-foreground">{t('features.stdText')}</p>
+              <p className="text-muted-foreground max-w-sm mx-auto">{t('features.stdText')}</p>
             </Card>
             
             <Card className="tamara-card text-center">
@@ -355,7 +355,7 @@ const Index = () => {
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-2">{t('features.rtTitle')}</h3>
-              <p className="text-muted-foreground">{t('features.rtText')}</p>
+              <p className="text-muted-foreground max-w-sm mx-auto">{t('features.rtText')}</p>
             </Card>
             
             <Card className="tamara-card text-center">
@@ -367,7 +367,7 @@ const Index = () => {
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-2">{t('features.fbTitle')}</h3>
-              <p className="text-muted-foreground">{t('features.fbText')}</p>
+              <p className="text-muted-foreground max-w-sm mx-auto">{t('features.fbText')}</p>
             </Card>
             
             <Card className="tamara-card text-center">
@@ -382,7 +382,7 @@ const Index = () => {
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-2">{t('features.mgrTitle')}</h3>
-              <p className="text-muted-foreground">{t('features.mgrText')}</p>
+              <p className="text-muted-foreground max-w-sm mx-auto">{t('features.mgrText')}</p>
             </Card>
           </div>
         </section>
