@@ -285,15 +285,29 @@ const Index = () => {
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tamara-text">
               {t('hero.title')}
             </h1>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Button asChild size="lg" className="tamara-gradient">
-                <a href={whatsappUrl} target="_blank" rel="noopener">
-                  <MessageSquare className="w-5 h-5 mr-2" />
-                  {t('cta.whatsapp')}
-                </a>
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button asChild size="lg" variant="outline" className="group relative overflow-hidden border-2 border-tamara-primary hover:bg-tamara-50 transition-all duration-300 hover:scale-105 min-w-[200px]">
+                <Link to="/demo" className="flex items-center gap-3">
+                  <div className="w-5 h-5 transition-transform group-hover:rotate-12">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <span className="font-semibold">{t('cta.learn')}</span>
+                </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/demo">{t('cta.learn')}</Link>
+              
+              <Button asChild size="lg" className="group relative overflow-hidden tamara-gradient shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 min-w-[200px] animate-pulse">
+                <a href={whatsappUrl} target="_blank" rel="noopener" className="flex items-center gap-3">
+                  <div className="w-5 h-5 transition-transform group-hover:scale-110">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <span className="font-semibold">{t('cta.whatsapp')}</span>
+                </a>
               </Button>
             </div>
           </div>
