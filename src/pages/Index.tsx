@@ -285,9 +285,6 @@ const Index = () => {
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tamara-text">
               {t('hero.title')}
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
-              {t('hero.subtitle')}
-            </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button asChild size="lg" className="tamara-gradient">
                 <a href={whatsappUrl} target="_blank" rel="noopener">
