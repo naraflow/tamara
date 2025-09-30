@@ -236,9 +236,6 @@ const Index = () => {
             <a href="#how" className="text-muted-foreground hover:text-primary font-medium transition-colors">
               {t('nav.how')}
             </a>
-            <a href="#roles" className="text-muted-foreground hover:text-primary font-medium transition-colors">
-              {t('nav.roles')}
-            </a>
             <a href="#about" className="text-muted-foreground hover:text-primary font-medium transition-colors">
               {t('nav.about')}
             </a>
@@ -276,7 +273,6 @@ const Index = () => {
               <a href="#features" className="block py-2 text-muted-foreground">{t('nav.features')}</a>
               <Link to="/demo" className="block py-2 text-muted-foreground">Demo</Link>
               <a href="#how" className="block py-2 text-muted-foreground">{t('nav.how')}</a>
-              <a href="#roles" className="block py-2 text-muted-foreground">{t('nav.roles')}</a>
               <a href="#about" className="block py-2 text-muted-foreground">{t('nav.about')}</a>
               <a href="#faq" className="block py-2 text-muted-foreground">{t('nav.faq')}</a>
               <a href={whatsappUrl} target="_blank" rel="noopener" className="block py-2 font-semibold tamara-text">
@@ -484,89 +480,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Roles Section */}
-        <section id="roles" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-center tamara-text">
-            {t('roles.title')}
-          </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <circle cx="9" cy="7" r="4" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <path d="M23 21V19C23 17.9 22.57 16.9 21.86 16.17" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <path d="M16 3.13C16.71 3.86 17.14 4.86 17.14 5.98C17.14 7.1 16.71 8.1 16 8.83" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                  </svg>
-                </div>
-              </div>
-              <h3 className="font-semibold text-lg">{t('roles.hk')}</h3>
-              <p className="text-muted-foreground mt-2">{t('roles.hkD')}</p>
-            </Card>
-            <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 11.08V12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C14.23 2 16.28 2.79 17.88 4.1" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
-                    <path d="M22 4L12 14.01L9 11.01" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-              </div>
-              <h3 className="font-semibold text-lg">{t('roles.spv')}</h3>
-              <p className="text-muted-foreground mt-2">{t('roles.spvD')}</p>
-            </Card>
-            <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="3" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <path d="M19.4 15C19.13 15.5 19.3 16.1 19.8 16.4L20.3 16.7C20.8 16.97 21.04 17.56 20.82 18.08L20.04 19.92C19.82 20.44 19.26 20.73 18.7 20.53L18.2 20.33C17.7 20.13 17.13 20.33 16.87 20.8C16.6 21.26 16.6 21.8 16.87 22.27L17.13 22.7C17.4 23.2 17.23 23.87 16.7 24.14L14.86 24.96C14.36 25.23 13.74 25.06 13.44 24.56L13.14 24.06C12.87 23.56 12.27 23.26 11.73 23.26H11.27C10.73 23.26 10.13 23.56 9.86 24.06L9.56 24.56C9.26 25.06 8.64 25.23 8.14 24.96L6.3 24.14C5.77 23.87 5.6 23.2 5.87 22.7L6.13 22.27C6.4 21.8 6.4 21.26 6.13 20.8C5.87 20.33 5.3 20.13 4.8 20.33L4.3 20.53C3.74 20.73 3.18 20.44 2.96 19.92L2.18 18.08C1.96 17.56 2.2 16.97 2.7 16.7L3.2 16.4C3.7 16.1 3.87 15.5 3.6 15C3.33 14.5 3.33 14 3.6 13.5C3.87 13 3.7 12.4 3.2 12.1L2.7 11.8C2.2 11.53 1.96 10.94 2.18 10.42L2.96 8.58C3.18 8.06 3.74 7.77 4.3 7.97L4.8 8.17C5.3 8.37 5.87 8.17 6.13 7.7C6.4 7.24 6.4 6.7 6.13 6.23L5.87 5.8C5.6 5.3 5.77 4.63 6.3 4.36L8.14 3.54C8.64 3.27 9.26 3.44 9.56 3.94L9.86 4.44C10.13 4.94 10.73 5.24 11.27 5.24H11.73C12.27 5.24 12.87 4.94 13.14 4.44L13.44 3.94C13.74 3.44 14.36 3.27 14.86 3.54L16.7 4.36C17.23 4.63 17.4 5.3 17.13 5.8L16.87 6.23C16.6 6.7 16.6 7.24 16.87 7.7C17.13 8.17 17.7 8.37 18.2 8.17L18.7 7.97C19.26 7.77 19.82 8.06 20.04 8.58L20.82 10.42C21.04 10.94 20.8 11.53 20.3 11.8L19.8 12.1C19.3 12.4 19.13 13 19.4 13.5C19.67 14 19.67 14.5 19.4 15Z" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                  </svg>
-                </div>
-              </div>
-              <h3 className="font-semibold text-lg">{t('roles.mtc')}</h3>
-              <p className="text-muted-foreground mt-2">{t('roles.mtcD')}</p>
-            </Card>
-            <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="5" y="2" width="14" height="20" rx="2" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <path d="M12 18H12.01" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                </div>
-              </div>
-              <h3 className="font-semibold text-lg">{t('roles.fd')}</h3>
-              <p className="text-muted-foreground mt-2">{t('roles.fdD')}</p>
-            </Card>
-            <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21 16V8C21 6.9 20.1 6 19 6H5C3.89 6 3 6.9 3 8V16C3 17.1 3.89 18 5 18H19C20.1 18 21 17.1 21 16Z" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <path d="M3 10H21" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <path d="M7 14H7.01" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                </div>
-              </div>
-              <h3 className="font-semibold text-lg">{t('roles.inv')}</h3>
-              <p className="text-muted-foreground mt-2">{t('roles.invD')}</p>
-            </Card>
-            <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 3V21H21" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
-                    <path d="M18 17L13 12L9 16L3 10" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-              </div>
-              <h3 className="font-semibold text-lg">{t('roles.fin')}</h3>
-              <p className="text-muted-foreground mt-2">{t('roles.finD')}</p>
-            </Card>
-          </div>
-        </section>
 
         {/* Metrics Section */}
         <section className="bg-card border-y border-border">
