@@ -1,117 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Tamara Design System - All colors, gradients, fonts, etc defined here
-All colors MUST be HSL.
-*/
+/* Apple-inspired modern design system with Tamara brand colors */
 
 @layer base {
   :root {
-    /* Tamara Brand Colors - Beautiful green theme */
-    --tamara-primary: 120 50% 35%;      /* #3B8C3B - main brand green */
-    --tamara-light: 120 50% 95%;        /* #ECF7EC - light green background */
-    --tamara-hover: 120 50% 30%;        /* Darker green for hover states */
-    --tamara-50: 120 50% 97%;           /* Very light green */
-    --tamara-100: 120 45% 92%;          /* Light green for accents */
-    
-    /* Core System Colors */
-    --background: 120 50% 97%;           /* Light green background */
-    --foreground: 220 20% 15%;          /* Dark gray text */
+    /* Soft neutral backgrounds - Apple style */
+    --background: 0 0% 99%;
+    --foreground: 210 17% 15%;
 
-    --card: 0 0% 100%;                  /* White cards */
-    --card-foreground: 220 20% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 17% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover-foreground: 210 17% 15%;
 
-    --primary: 120 50% 35%;             /* Tamara green as primary */
-    --primary-foreground: 0 0% 100%;    /* White text on green */
+    /* Tamara Brand - Modern green with pastel variations */
+    --tamara-primary: 140 45% 48%;      /* Main green */
+    --tamara-50: 140 35% 97%;           /* Lightest pastel */
+    --tamara-100: 140 35% 92%;          /* Very light pastel */
+    --tamara-200: 140 35% 85%;          /* Light pastel */
+    --tamara-300: 140 35% 70%;          /* Medium light */
+    --tamara-400: 140 40% 58%;          /* Medium */
+    --tamara-500: 140 45% 48%;          /* Base */
+    --tamara-600: 140 50% 38%;          /* Dark */
+    --tamara-700: 140 55% 28%;          /* Darker */
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 220 20% 15%;
+    /* Soft complementary colors */
+    --primary: 140 45% 48%;
+    --primary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 220 13% 46%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 17% 20%;
 
-    --accent: 120 45% 92%;              /* Light green accent */
-    --accent-foreground: 120 50% 35%;   /* Green text on light green */
+    --muted: 210 15% 96%;
+    --muted-foreground: 210 10% 45%;
 
-    --destructive: 0 75% 55%;
+    --accent: 140 35% 95%;
+    --accent-foreground: 140 55% 25%;
+
+    /* Status colors - Soft and modern */
+    --success: 140 45% 48%;
+    --success-foreground: 0 0% 100%;
+    --success-soft: 140 35% 95%;
+
+    --warning: 35 90% 65%;
+    --warning-foreground: 0 0% 100%;
+    --warning-soft: 35 90% 95%;
+
+    --destructive: 0 75% 65%;
     --destructive-foreground: 0 0% 100%;
+    --destructive-soft: 0 75% 95%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 120 50% 35%;
+    /* Soft borders and inputs */
+    --border: 210 15% 88%;
+    --input: 210 15% 92%;
+    --ring: 140 45% 48%;
 
-    --radius: 1rem;                     /* Rounded corners for modern look */
+    /* Modern rounded corners */
+    --radius: 1rem;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--tamara-primary)), hsl(var(--tamara-hover)));
-    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--accent) / 0.3));
-    
-    /* Shadows */
-    --shadow-card: 0 4px 6px -1px hsl(var(--tamara-primary) / 0.1), 0 2px 4px -1px hsl(var(--tamara-primary) / 0.06);
-    --shadow-hover: 0 10px 15px -3px hsl(var(--tamara-primary) / 0.15), 0 4px 6px -2px hsl(var(--tamara-primary) / 0.1);
-    
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
+    /* Sidebar variables */
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 210 17% 20%;
+    --sidebar-primary: 140 45% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 15% 96%;
+    --sidebar-accent-foreground: 210 17% 20%;
+    --sidebar-border: 210 15% 90%;
+    --sidebar-ring: 140 45% 48%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 20% 8%;
+    --foreground: 210 20% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 20% 10%;
+    --card-foreground: 210 20% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 210 20% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --tamara-primary: 140 45% 55%;
+    --tamara-50: 140 20% 15%;
+    --tamara-100: 140 20% 20%;
+    --tamara-200: 140 25% 28%;
+    --tamara-300: 140 30% 38%;
+    --tamara-400: 140 35% 48%;
+    --tamara-500: 140 45% 55%;
+    --tamara-600: 140 45% 65%;
+    --tamara-700: 140 40% 75%;
   }
 }
 
@@ -121,31 +100,72 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans scroll-smooth;
-    font-family: 'Inter', sans-serif;
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  
-  html {
-    scroll-behavior: smooth;
+
+  /* Apple-inspired utilities */
+  .tamara-gradient {
+    background: linear-gradient(135deg, hsl(var(--tamara-500)), hsl(var(--tamara-600)));
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(20px) saturate(180%);
+    background: hsla(0, 0%, 100%, 0.8);
+  }
+
+  /* Smooth animations */
+  * {
+    @apply transition-colors duration-200;
+  }
+
+  /* Typography - Apple style */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--tamara-300));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--tamara-400));
+  }
+
+  /* Slide in animation */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
 }
 
 @layer components {
-  /* Custom component styles using design system */
-  .tamara-card {
-    @apply bg-card border border-border rounded-3xl p-6;
-    box-shadow: var(--shadow-card);
-    transition: var(--transition-smooth);
-  }
-  
-  .tamara-card:hover {
-    box-shadow: var(--shadow-hover);
-  }
-  
-  .tamara-gradient {
-    background: var(--gradient-hero);
-  }
-  
   .tamara-text {
     color: hsl(var(--tamara-primary));
   }

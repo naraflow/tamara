@@ -89,19 +89,19 @@ export const DemoDashboardPage: React.FC = () => {
   return (
     <div className="space-y-8 p-8">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-foreground mb-4">
-          Dashboard SLA & Real-time Monitoring
+        <h1 className="text-4xl font-bold mb-4">
+          SLA Dashboard
         </h1>
-        <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-          Pantau kepatuhan SLA, status Work Order (WO), dan prediksi eskalasi secara real-time.
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          Monitor response times and track service level compliance in real-time.
         </p>
       </div>
 
       {/* KPI Section */}
       <section>
-        <h2 className="text-2xl font-bold text-foreground mb-6">Key Performance Indicators (KPI)</h2>
+        <h2 className="text-2xl font-bold mb-6">Key Metrics</h2>
         <div className="grid md:grid-cols-5 gap-6">
-          <Card className="p-6 text-center bg-tamara-50/50 border-l-4 border-l-tamara-primary">
+          <Card className="p-6 text-center bg-gradient-to-br from-tamara-50 to-white border-0 shadow-lg">
             <div className="text-3xl font-bold text-tamara-primary mb-2">{kpiData.timeToWO}s</div>
             <div className="text-sm text-muted-foreground">Median Time-to-WO</div>
           </Card>
@@ -227,20 +227,20 @@ export const DemoDashboardPage: React.FC = () => {
 
       {/* Summary Section */}
       <section>
-        <Card className="p-8 bg-gradient-to-br from-tamara-50 to-white">
-          <h2 className="text-2xl font-bold text-foreground mb-4">Kesimpulan</h2>
+        <Card className="p-8 bg-gradient-to-br from-tamara-50 to-white border-0 shadow-lg">
+          <h2 className="text-2xl font-bold mb-4">What You Get</h2>
           <ul className="space-y-3 text-muted-foreground">
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 bg-tamara-primary rounded-full mt-2" />
-              <span>Dashboard SLA membantu manajer memantau kepatuhan waktu penyelesaian keluhan secara real-time.</span>
+              <span>Real-time SLA tracking prevents service delays</span>
             </li>
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 bg-tamara-primary rounded-full mt-2" />
-              <span>Eskalasi otomatis mencegah pelanggaran SLA dan meningkatkan kepuasan tamu.</span>
+              <span>Automatic escalation improves guest satisfaction</span>
             </li>
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 bg-tamara-primary rounded-full mt-2" />
-              <span>Tamara mengintegrasikan sistem WhatsApp dengan CMMS untuk alur kerja yang lebih efisien.</span>
+              <span>WhatsApp integration makes it simple for everyone</span>
             </li>
           </ul>
         </Card>

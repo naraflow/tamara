@@ -9,78 +9,78 @@ interface DemoHomePageProps {
 export const DemoHomePage: React.FC<DemoHomePageProps> = ({ onNextPage }) => {
   const kpiCards = [
     {
-      title: 'Fokus Utama',
-      value: 'SLA Menit',
-      description: 'Bukan jam. Keluhan kebersihan idealnya selesai kurang dari 30 menit.',
+      title: 'Fast Response',
+      value: '< 30 min',
+      description: 'Housekeeping requests resolved quickly.',
     },
     {
-      title: 'Routing Cerdas',
-      value: 'Klasifikasi 98% Akurat',
-      description: 'Otomatis kirim Work Order (WO) ke Front Office, Housekeeping, atau Engineering.',
+      title: 'Smart Routing',
+      value: '98% accurate',
+      description: 'Automatic department assignment.',
     },
     {
-      title: 'Outcome',
-      value: 'Kepuasan Tamu Meningkat',
-      description: 'Mendukung peningkatan GSS (Guest Satisfaction Score) hingga 10%.',
+      title: 'Guest Satisfaction',
+      value: '10% increase',
+      description: 'Better service, happier guests.',
     },
   ];
 
   const workflowSteps = [
     {
       number: 1,
-      title: 'INPUT: Keluhan Tamu melalui WhatsApp',
-      description: 'Tamu mengirim pesan keluhan menggunakan bahasa sehari-hari (misal: "AC kamar 501 tidak dingin") ke nomor WA hotel.',
+      title: 'Guest Reports Issue',
+      description: 'Guests send complaints via WhatsApp in plain language. Example: "AC not working in room 501."',
     },
     {
       number: 2,
-      title: 'PROSES: Routing Otomatis Kurang dari 60 Detik',
+      title: 'Auto-Routing',
       items: [
-        'Klasifikasi Otomatis: Tamara menganalisis keluhan (misal: "AC tidak dingin" menjadi Engineering).',
-        'Work Order Cepat: WO (Work Order) otomatis dibuat di sistem CMMS/Task Management.',
-        'Notifikasi Real-time: PIC (Teknisi/HK) dan Front Office (FO) menerima notifikasi instan untuk validasi.',
+        'AI classifies the issue (e.g., "AC problem" → Engineering)',
+        'Work Order created automatically in your system',
+        'Staff receives instant notification',
       ],
     },
     {
       number: 3,
-      title: 'OUTPUT & OUTCOME: Pelacakan & Kepatuhan SLA',
+      title: 'Real-Time Updates',
       items: [
-        'Feedback Loop Otomatis: Status penanganan WO dikirim kembali ke tamu via WA (misal: "Teknisi sedang menuju kamar Anda").',
-        'Dashboard SLA: Manajer memantau Time-to-WO, Time to Repair (TTR), dan risiko pelanggaran SLA secara real-time.',
-        'Eskalasi Otomatis: Peringatan dikirim ke Manajer jika WO melewati 50% atau 100% batas waktu SLA.',
+        'Guest gets status updates via WhatsApp',
+        'Manager tracks SLA compliance on dashboard',
+        'Automatic escalation for overdue tasks',
       ],
     },
   ];
 
   return (
-    <div className="space-y-12 p-8">
+    <div className="space-y-16 p-8">
       {/* Hero Section */}
-      <section className="text-center py-12">
-        <h1 className="text-5xl font-bold text-foreground mb-6 leading-tight">
-          Tamara: Agen Resolusi
-          <br />
-          <span className="text-tamara-primary">Keluhan Tamu Hotel</span>
+      <section className="text-center py-16">
+        <h1 className="text-5xl font-bold mb-6">
+          Tamara
         </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Solusi cepat berbasis WhatsApp untuk menjamin kepuasan tamu dan
-          kepatuhan Service Level Agreement (SLA) operasional.
+        <p className="text-2xl text-tamara-primary font-semibold mb-4">
+          Hotel Guest Complaint Resolution
+        </p>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          Instant complaint handling through WhatsApp. Simple. Fast. Effective.
         </p>
       </section>
 
       {/* KPI Cards */}
-      <section className="grid md:grid-cols-3 gap-8">
+      <section className="grid md:grid-cols-3 gap-6">
         {kpiCards.map((kpi, index) => (
-          <Card key={index} className="p-8 border-l-4 border-l-tamara-primary bg-tamara-50/50 shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
-            <p className="text-sm font-medium text-tamara-primary mb-2">{kpi.title}</p>
-            <h3 className="text-2xl font-bold text-foreground mb-3">{kpi.value}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">{kpi.description}</p>
+          <Card key={index} className="p-8 bg-gradient-to-br from-tamara-50 to-white border-0 shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
+            <p className="text-sm font-semibold text-tamara-600 mb-2 uppercase tracking-wide">{kpi.title}</p>
+            <h3 className="text-4xl font-bold text-tamara-primary mb-3">{kpi.value}</h3>
+            <p className="text-sm text-muted-foreground">{kpi.description}</p>
           </Card>
         ))}
       </section>
 
       {/* Workflow Section */}
       <section>
-        <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
-          Alur Kerja (Workflow) Tamara
+        <h2 className="text-3xl font-bold text-center mb-12">
+          How It Works
         </h2>
 
         <div className="space-y-8">
@@ -118,12 +118,12 @@ export const DemoHomePage: React.FC<DemoHomePageProps> = ({ onNextPage }) => {
       </section>
 
       {/* CTA */}
-      <section className="text-center py-8">
+      <section className="text-center py-12">
         <Button
           onClick={onNextPage}
-          className="bg-tamara-primary hover:bg-tamara-600 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
+          className="bg-tamara-primary hover:bg-tamara-600 text-white px-10 py-7 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
         >
-          Lanjut ke Simulasi Interaktif (Step 2)
+          See Interactive Demo →
         </Button>
       </section>
     </div>

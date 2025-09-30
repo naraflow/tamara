@@ -94,24 +94,23 @@ export const DemoInteractivePage: React.FC<DemoInteractivePageProps> = ({ onNext
   return (
     <div className="space-y-8 p-8">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-foreground mb-4">
-          Simulasi Interaktif: Tamu ke Tamara ke PIC
+        <h1 className="text-4xl font-bold mb-4">
+          Live Simulation
         </h1>
-        <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-          Simulasikan tamu (kiri) mengirim keluhan dan lihat bagaimana sistem Tamara
-          otomatis melakukan routing dan mengirim notifikasi real-time ke staf terkait (kanan).
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          Watch how guests raise complaints and staff receives instant notifications.
         </p>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-8">
         {/* Guest WhatsApp Mockup */}
-        <Card className="p-6 shadow-xl">
+        <Card className="p-6 shadow-xl bg-white">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-semibold text-foreground">
-              A. Sisi Tamu (WhatsApp Input)
+            <h2 className="text-xl font-semibold">
+              Guest Side
             </h2>
-            <Button variant="outline" size="sm" onClick={resetDemo}>
-              Reset Demo
+            <Button variant="ghost" size="sm" onClick={resetDemo} className="text-tamara-primary">
+              Reset
             </Button>
           </div>
 
@@ -167,12 +166,12 @@ export const DemoInteractivePage: React.FC<DemoInteractivePageProps> = ({ onNext
         </Card>
 
         {/* PIC Notification Mockup */}
-        <Card className="p-6 shadow-xl">
-          <h2 className="text-xl font-semibold text-foreground mb-4">
-            B. Sisi PIC (Staff Task/CMMS Notifikasi)
+        <Card className="p-6 shadow-xl bg-white">
+          <h2 className="text-xl font-semibold mb-4">
+            Staff Side
           </h2>
 
-          <div className="h-96 bg-muted rounded-lg p-4 space-y-4 overflow-y-auto">
+          <div className="h-96 bg-tamara-50/30 rounded-lg p-4 space-y-4 overflow-y-auto">
             {/* CMMS Header */}
             <div className="flex items-center justify-between pb-3 border-b border-border">
               <span className="font-semibold text-foreground">Work Orders (Engineering)</span>
@@ -236,12 +235,11 @@ export const DemoInteractivePage: React.FC<DemoInteractivePageProps> = ({ onNext
       <div className="text-center py-8">
         <Button 
           onClick={onNextPage}
-          className="bg-tamara-primary hover:bg-tamara-600 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
+          className="bg-tamara-primary hover:bg-tamara-600 text-white px-10 py-7 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
         >
-          Lanjut ke Dashboard SLA (Step 3)
+          View SLA Dashboard →
         </Button>
       </div>
-
     </div>
   );
 };
