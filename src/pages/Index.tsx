@@ -334,7 +334,7 @@ const Index = () => {
         </div>
         
         <div className="text-center max-w-4xl mx-auto mb-12 relative z-10">
-            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tamara-text">
+            <h1 className="text-5xl sm:text-6xl font-black leading-tight text-gray-900 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
               {t('hero.title')}
             </h1>
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
