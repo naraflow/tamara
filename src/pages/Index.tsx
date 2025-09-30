@@ -32,14 +32,10 @@ const Index = () => {
       'features.stdText': 'Housekeeping, maintenance, front desk, inventory, finance—semua tercatat rapi, seragam, dan bisa diaudit.',
       'features.rtTitle': 'Laporan Real-time',
       'features.rtText': 'Status kamar, keluhan, dan kas harian tersinkron otomatis—langsung dari WhatsApp.',
-      'features.fraudTitle': 'Pencegahan Fraud',
-      'features.fraudText': 'Timestamp & user ID di tiap input, foto verifikasi, dan log audit mengurangi kebocoran kas & amenities.',
-      'features.invTitle': 'Kontrol Inventaris',
-      'features.invText': 'Pemakaian amenities terpantau; threshold stok otomatis memicu reorder untuk di-approve admin.',
       'features.fbTitle': 'Feedback Tamu Organik',
       'features.fbText': 'Tamu opt-in untuk layanan; saat check-out, rating 1–5 + komentar tersimpan dan alert otomatis ke supervisor ≤3.',
-      'features.mgrTitle': 'Ringkasan Manajer',
-      'features.mgrText': 'Okupansi, ready rooms, cashflow, rating tamu—tersaji otomatis harian (PDF/Excel on demand).',
+      'features.mgrTitle': 'Dashboard SLA',
+      'features.mgrText': 'Waktu respons work order 45 detik, tingkat penyelesaian HK 96%, waktu perbaikan ENG 55 menit, akurasi klasifikasi 98.5%, kepuasan tamu 4.7/5.',
       
       // How it Works
       'how.title': 'Cara Kerja',
@@ -125,14 +121,10 @@ const Index = () => {
       'features.stdText': 'Housekeeping, maintenance, front desk, inventory, finance—recorded neatly, consistently, and auditable.',
       'features.rtTitle': 'Real-time Reporting',
       'features.rtText': 'Room status, complaints, and daily cash sync automatically—from WhatsApp.',
-      'features.fraudTitle': 'Anti-fraud Controls',
-      'features.fraudText': 'Timestamps & user IDs, photo verification, and audit logs reduce petty cash & amenities leakage.',
-      'features.invTitle': 'Inventory Control',
-      'features.invText': 'Track amenities usage; stock thresholds trigger reorder for admin approval.',
       'features.fbTitle': 'Organic Guest Feedback',
       'features.fbText': 'Guests opt-in for services; at check-out they rate 1–5 with comments; low ratings alert supervisors.',
-      'features.mgrTitle': 'Manager Digest',
-      'features.mgrText': 'Occupancy, ready rooms, cash flow, guest ratings—auto daily; PDF/Excel on demand.',
+      'features.mgrTitle': 'SLA Dashboard',
+      'features.mgrText': 'Work order response time 45 seconds, HK completion rate 96%, ENG repair time 55 minutes, classification accuracy 98.5%, guest satisfaction 4.7/5.',
       
       // How it Works
       'how.title': 'How it Works',
@@ -363,7 +355,7 @@ const Index = () => {
           <p className="mt-3 text-center text-muted-foreground max-w-3xl mx-auto">
             {t('features.subtitle')}
           </p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
             <Card className="tamara-card text-center">
               <div className="flex justify-center items-center mb-4">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-3">
@@ -388,34 +380,6 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">{t('features.rtTitle')}</h3>
               <p className="text-muted-foreground">{t('features.rtText')}</p>
-            </Card>
-            
-            <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-4">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-3">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="5" y="11" width="14" height="10" rx="2" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <path d="M12 11V7C12 5.89543 12.8954 5 14 5H14C15.1046 5 16 5.89543 16 7V11" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <circle cx="12" cy="16" r="1" fill="hsl(var(--tamara-primary))"/>
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">{t('features.fraudTitle')}</h3>
-              <p className="text-muted-foreground">{t('features.fraudText')}</p>
-            </Card>
-            
-            <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-4">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-3">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <path d="M3 9H21" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                    <path d="M9 3V21" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-                  </svg>
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">{t('features.invTitle')}</h3>
-              <p className="text-muted-foreground">{t('features.invText')}</p>
             </Card>
             
             <Card className="tamara-card text-center">
