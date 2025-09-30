@@ -76,7 +76,7 @@ const Index = () => {
       
       // About
       'about.title': 'Tentang Tamara',
-      'about.text': 'Hotel modern menghadapi tantangan serius: keluhan tamu sering terlewat karena proses manual dan koordinasi antar departemen yang lambat. Satu keluhan kecil bisa berujung pada ulasan negatif yang merusak reputasi. Tamara hadir sebagai solusi: agen operasional hotel berbasis WhatsApp. Setiap komplain otomatis diklasifikasi, diteruskan ke staf yang tepat, dan dipantau melalui dashboard SLA. Semua tanpa aplikasi tambahan dan tanpa training yang rumit. Inilah saatnya beralih ke sistem yang lebih cepat, transparan, dan terukur—karena tamu kini menuntut respons dalam hitungan menit, bukan jam.',
+      'about.text': 'Keluhan tamu sering terlambat ditangani karena proses manual dan koordinasi antar departemen yang lambat. Satu keluhan kecil bisa berujung ulasan negatif. Tamara hadir sebagai solusi berbasis WhatsApp: setiap komplain otomatis diklasifikasi, diteruskan ke staf terkait, dan dipantau lewat dashboard SLA. Tanpa aplikasi tambahan, tanpa training rumit.',
       
       // FAQ
       'faq.title': 'Pertanyaan Umum',
@@ -165,7 +165,7 @@ const Index = () => {
       
       // About
       'about.title': 'About Tamara',
-      'about.text': 'Modern hotels face a serious challenge: guest complaints often slip through due to manual processes and slow inter-departmental coordination. One small complaint can lead to negative reviews that damage reputation. Tamara emerges as the solution: a WhatsApp-based hotel operations agent. Every complaint is automatically classified, forwarded to the right staff, and monitored through an SLA dashboard. All without additional apps and without complicated training. It\'s time to switch to a faster, more transparent, and measurable system—because guests now demand responses in minutes, not hours.',
+      'about.text': 'Guest complaints are often handled late due to manual processes and slow inter-departmental coordination. One small complaint can lead to negative reviews. Tamara emerges as a WhatsApp-based solution: every complaint is automatically classified, forwarded to relevant staff, and monitored via SLA dashboard. No additional apps, no complicated training.',
       
       // FAQ
       'faq.title': 'FAQ',
