@@ -286,7 +286,7 @@ const Index = () => {
               {t('hero.title')}
             </h1>
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Button asChild size="lg" className="group relative overflow-hidden bg-white text-tamara-primary border-3 border-tamara-primary hover:bg-tamara-primary hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-2xl min-w-[240px] h-16 text-lg font-bold">
+              <Button asChild size="lg" className="group relative overflow-hidden bg-tamara-600 text-white border-3 border-tamara-700 hover:bg-tamara-700 hover:border-tamara-800 transition-all duration-300 hover:scale-110 hover:shadow-2xl min-w-[240px] h-16 text-lg font-bold">
                 <Link to="/demo" className="flex items-center gap-3">
                   <div className="w-6 h-6 transition-transform group-hover:rotate-12">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
