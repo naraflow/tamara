@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { DemoSection } from "@/components/DemoSection";
 import { CheckCircle, MessageSquare, Shield, Package, Star, BarChart3, Clock, Smartphone, Users, Settings, DollarSign, FileText } from "lucide-react";
 
 const Index = () => {
@@ -223,6 +223,9 @@ const Index = () => {
             <a href="#features" className="text-muted-foreground hover:text-primary font-medium transition-colors">
               {t('nav.features')}
             </a>
+            <Link to="/demo" className="text-muted-foreground hover:text-primary font-medium transition-colors">
+              Demo
+            </Link>
             <a href="#how" className="text-muted-foreground hover:text-primary font-medium transition-colors">
               {t('nav.how')}
             </a>
@@ -264,6 +267,7 @@ const Index = () => {
           <div className="md:hidden border-t border-border bg-card">
             <div className="px-4 py-3 space-y-2">
               <a href="#features" className="block py-2 text-muted-foreground">{t('nav.features')}</a>
+              <Link to="/demo" className="block py-2 text-muted-foreground">Demo</Link>
               <a href="#how" className="block py-2 text-muted-foreground">{t('nav.how')}</a>
               <a href="#roles" className="block py-2 text-muted-foreground">{t('nav.roles')}</a>
               <a href="#about" className="block py-2 text-muted-foreground">{t('nav.about')}</a>
@@ -297,7 +301,7 @@ const Index = () => {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="#features">{t('cta.learn')}</a>
+                <Link to="/demo">{t('cta.learn')}</Link>
               </Button>
             </div>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
@@ -315,9 +319,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-
-        {/* Demo Section */}
-        <DemoSection />
       </section>
 
         {/* About Section */}
