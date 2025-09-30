@@ -23,7 +23,7 @@ const Index = () => {
       'hero.subtitle': 'Standarkan housekeeping, maintenance, front desk, inventory, finance, dan feedback tamu—tanpa aplikasi baru.',
       'hero.compliance': '✅ Compliant: tamu opt-in via QR/booking link • ✅ Low-bandwidth • ✅ Audit trail',
       'cta.whatsapp': 'Hubungi via WhatsApp',
-      'cta.learn': 'Pelajari Fitur',
+      'cta.learn': 'Coba Demo',
       
       // Features
       'features.title': 'Fitur Utama',
@@ -112,7 +112,7 @@ const Index = () => {
       'hero.subtitle': 'Standardize housekeeping, maintenance, front desk, inventory, finance, and guest feedback—no new app needed.',
       'hero.compliance': '✅ Compliant guest opt-in • ✅ Low-bandwidth • ✅ Full audit trail',
       'cta.whatsapp': 'WhatsApp us',
-      'cta.learn': 'See Features',
+      'cta.learn': 'Try Demo',
       
       // Features
       'features.title': 'Key Features',
