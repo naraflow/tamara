@@ -285,28 +285,28 @@ const Index = () => {
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tamara-text">
               {t('hero.title')}
             </h1>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button asChild size="lg" variant="outline" className="group relative overflow-hidden border-2 border-tamara-primary hover:bg-tamara-50 transition-all duration-300 hover:scale-105 min-w-[200px]">
+            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
+              <Button asChild size="lg" variant="outline" className="group relative overflow-hidden border-3 border-tamara-primary hover:bg-tamara-50 transition-all duration-300 hover:scale-110 hover:shadow-2xl min-w-[240px] h-16 text-lg font-bold">
                 <Link to="/demo" className="flex items-center gap-3">
-                  <div className="w-5 h-5 transition-transform group-hover:rotate-12">
+                  <div className="w-6 h-6 transition-transform group-hover:rotate-12">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <span className="font-semibold">{t('cta.learn')}</span>
+                  <span className="font-bold text-lg">{t('cta.learn')}</span>
                 </Link>
               </Button>
               
-              <Button asChild size="lg" className="group relative overflow-hidden tamara-gradient shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 min-w-[200px] animate-pulse">
+              <Button asChild size="lg" className="group relative overflow-hidden tamara-gradient shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(34,197,94,0.5)] transition-all duration-300 hover:scale-110 min-w-[240px] h-16 text-lg font-bold ring-4 ring-tamara-primary/20">
                 <a href={whatsappUrl} target="_blank" rel="noopener" className="flex items-center gap-3">
-                  <div className="w-5 h-5 transition-transform group-hover:scale-110">
+                  <div className="w-6 h-6 transition-transform group-hover:scale-125 group-hover:rotate-6">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <span className="font-semibold">{t('cta.whatsapp')}</span>
+                  <span className="font-bold text-lg">{t('cta.whatsapp')}</span>
                 </a>
               </Button>
             </div>
