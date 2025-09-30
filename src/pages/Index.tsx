@@ -491,7 +491,7 @@ const Index = () => {
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-3">
+              <div className="flex justify-center items-center mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
@@ -505,7 +505,7 @@ const Index = () => {
               <p className="text-muted-foreground mt-2">{t('roles.hkD')}</p>
             </Card>
             <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-3">
+              <div className="flex justify-center items-center mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22 11.08V12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C14.23 2 16.28 2.79 17.88 4.1" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
@@ -517,7 +517,7 @@ const Index = () => {
               <p className="text-muted-foreground mt-2">{t('roles.spvD')}</p>
             </Card>
             <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-3">
+              <div className="flex justify-center items-center mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="3" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
@@ -529,7 +529,7 @@ const Index = () => {
               <p className="text-muted-foreground mt-2">{t('roles.mtcD')}</p>
             </Card>
             <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-3">
+              <div className="flex justify-center items-center mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="5" y="2" width="14" height="20" rx="2" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
@@ -541,7 +541,7 @@ const Index = () => {
               <p className="text-muted-foreground mt-2">{t('roles.fdD')}</p>
             </Card>
             <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-3">
+              <div className="flex justify-center items-center mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 16V8C21 6.9 20.1 6 19 6H5C3.89 6 3 6.9 3 8V16C3 17.1 3.89 18 5 18H19C20.1 18 21 17.1 21 16Z" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
@@ -554,7 +554,7 @@ const Index = () => {
               <p className="text-muted-foreground mt-2">{t('roles.invD')}</p>
             </Card>
             <Card className="tamara-card text-center">
-              <div className="flex justify-center items-center mb-3">
+              <div className="flex justify-center items-center mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tamara-100 to-tamara-200 flex items-center justify-center p-2">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 3V21H21" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
