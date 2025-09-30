@@ -283,51 +283,51 @@ const Index = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 relative overflow-hidden">
         {/* Abstract Gradient Shapes */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-yellow-300/30 to-yellow-500/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-tr from-tamara-300/30 to-tamara-500/30 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-gradient-to-bl from-yellow-400/25 to-tamara-400/25 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-yellow-400/50 to-amber-500/50 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-tr from-tamara-400/50 to-emerald-500/50 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-gradient-to-bl from-yellow-500/40 to-tamara-500/40 rounded-full blur-3xl"></div>
         </div>
         
         {/* Floating Icons */}
         <div className="absolute inset-0 pointer-events-none">
           {/* Bell Icon - Service */}
           <div className="absolute top-32 right-20 animate-[float_6s_ease-in-out_infinite]">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-30">
-              <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-50 drop-shadow-lg">
+              <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="hsl(var(--tamara-600))" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="hsl(var(--tamara-600))" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
           
           {/* Checkmark Icon - Completion */}
           <div className="absolute bottom-40 left-16 animate-[float_8s_ease-in-out_infinite_2s]">
-            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-30">
-              <path d="M22 11.08V12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C14.23 2 16.28 2.79 17.88 4.1" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
-              <path d="M22 4L12 14.01L9 11.01" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-50 drop-shadow-lg">
+              <path d="M22 11.08V12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C14.23 2 16.28 2.79 17.88 4.1" stroke="hsl(var(--tamara-600))" strokeWidth="2.5" strokeLinecap="round"/>
+              <path d="M22 4L12 14.01L9 11.01" stroke="hsl(var(--tamara-600))" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
           
           {/* Clock Icon - Speed */}
           <div className="absolute top-48 left-24 animate-[float_7s_ease-in-out_infinite_1s]">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-30">
-              <circle cx="12" cy="12" r="10" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-              <path d="M12 6V12L16 14" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-50 drop-shadow-lg">
+              <circle cx="12" cy="12" r="10" stroke="hsl(var(--tamara-600))" strokeWidth="2.5"/>
+              <path d="M12 6V12L16 14" stroke="hsl(var(--tamara-600))" strokeWidth="2.5" strokeLinecap="round"/>
             </svg>
           </div>
           
           {/* Small accent icon - top left */}
           <div className="absolute top-24 left-1/4 animate-[float_5s_ease-in-out_infinite_3s]">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-25">
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-40 drop-shadow-md">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="hsl(var(--tamara-600))" strokeWidth="2.5"/>
             </svg>
           </div>
           
           {/* Small accent icon - bottom right */}
           <div className="absolute bottom-32 right-1/4 animate-[float_6s_ease-in-out_infinite_4s]">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-25">
-              <rect x="3" y="3" width="7" height="7" rx="1" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-              <rect x="14" y="3" width="7" height="7" rx="1" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-              <rect x="3" y="14" width="7" height="7" rx="1" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
-              <rect x="14" y="14" width="7" height="7" rx="1" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-40 drop-shadow-md">
+              <rect x="3" y="3" width="7" height="7" rx="1" stroke="hsl(var(--tamara-600))" strokeWidth="2.5"/>
+              <rect x="14" y="3" width="7" height="7" rx="1" stroke="hsl(var(--tamara-600))" strokeWidth="2.5"/>
+              <rect x="3" y="14" width="7" height="7" rx="1" stroke="hsl(var(--tamara-600))" strokeWidth="2.5"/>
+              <rect x="14" y="14" width="7" height="7" rx="1" stroke="hsl(var(--tamara-600))" strokeWidth="2.5"/>
             </svg>
           </div>
         </div>
