@@ -76,7 +76,7 @@ const Index = () => {
       
       // About
       'about.title': 'Tentang Tamara',
-      'about.text': 'Kelola hotel tanpa ribet training staf atau install aplikasi baru. Semua via WhatsApp.',
+      'about.text': 'Hotel modern menghadapi tantangan serius: keluhan tamu sering terlewat karena proses manual dan koordinasi antar departemen yang lambat. Satu keluhan kecil bisa berujung pada ulasan negatif yang merusak reputasi. Tamara hadir sebagai solusi: agen operasional hotel berbasis WhatsApp. Setiap komplain otomatis diklasifikasi, diteruskan ke staf yang tepat, dan dipantau melalui dashboard SLA. Semua tanpa aplikasi tambahan dan tanpa training yang rumit. Inilah saatnya beralih ke sistem yang lebih cepat, transparan, dan terukur—karena tamu kini menuntut respons dalam hitungan menit, bukan jam.',
       
       // FAQ
       'faq.title': 'Pertanyaan Umum',
@@ -165,7 +165,7 @@ const Index = () => {
       
       // About
       'about.title': 'About Tamara',
-      'about.text': 'Manage your hotel without training staff or installing new apps. Everything via WhatsApp.',
+      'about.text': 'Modern hotels face a serious challenge: guest complaints often slip through due to manual processes and slow inter-departmental coordination. One small complaint can lead to negative reviews that damage reputation. Tamara emerges as the solution: a WhatsApp-based hotel operations agent. Every complaint is automatically classified, forwarded to the right staff, and monitored through an SLA dashboard. All without additional apps and without complicated training. It\'s time to switch to a faster, more transparent, and measurable system—because guests now demand responses in minutes, not hours.',
       
       // FAQ
       'faq.title': 'FAQ',
@@ -318,7 +318,7 @@ const Index = () => {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-center tamara-text">
             {t('about.title')}
           </h2>
-          <p className="mt-4 text-foreground text-lg text-center">
+          <p className="mt-4 text-foreground text-lg text-center max-w-4xl mx-auto leading-relaxed">
             {t('about.text')}
           </p>
         </section>
