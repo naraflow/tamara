@@ -76,7 +76,7 @@ const Index = () => {
       
       // About
       'about.title': 'Tentang Tamara',
-      'about.text': 'Sistem operasional hotel via WhatsApp. Simpel, efisien, tanpa aplikasi baru untuk staf Anda.',
+      'about.text': 'Kelola hotel tanpa ribet training staf atau install aplikasi baru. Semua via WhatsApp.',
       
       // FAQ
       'faq.title': 'Pertanyaan Umum',
@@ -165,7 +165,7 @@ const Index = () => {
       
       // About
       'about.title': 'About Tamara',
-      'about.text': 'Hotel operations system via WhatsApp. Simple, efficient, no new apps for your staff.',
+      'about.text': 'Manage your hotel without training staff or installing new apps. Everything via WhatsApp.',
       
       // FAQ
       'faq.title': 'FAQ',
