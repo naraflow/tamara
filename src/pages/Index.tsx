@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import WhatsAppMockup from "@/components/WhatsAppMockup";
+import { DemoSection } from "@/components/DemoSection";
 import { CheckCircle, MessageSquare, Shield, Package, Star, BarChart3, Clock, Smartphone, Users, Settings, DollarSign, FileText } from "lucide-react";
 
 const Index = () => {
@@ -280,9 +280,9 @@ const Index = () => {
       </header>
 
       <main>
-        {/* Hero Section */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 grid lg:grid-cols-12 gap-10 items-center">
-          <div className="lg:col-span-7">
+      {/* Hero Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
+        <div className="text-center max-w-4xl mx-auto mb-12">
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tamara-text">
               {t('hero.title')}
             </h1>
@@ -315,12 +315,10 @@ const Index = () => {
               </div>
             </div>
           </div>
-          
-          {/* WhatsApp Interactive Mockup */}
-          <div className="lg:col-span-5">
-            <WhatsAppMockup />
-          </div>
-        </section>
+
+        {/* Demo Section */}
+        <DemoSection />
+      </section>
 
         {/* About Section */}
         <section id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
