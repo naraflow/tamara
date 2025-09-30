@@ -309,15 +309,36 @@ const Index = () => {
             </div>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
               <div className="flex items-center gap-2 bg-accent/50 rounded-full px-3 py-2">
-                <CheckCircle className="w-4 h-4 text-tamara-primary flex-shrink-0" />
+                <div className="w-5 h-5 flex-shrink-0">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" fill="hsl(var(--tamara-primary))" opacity="0.15"/>
+                    <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M9 12L11 14L15 10" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
                 <span className="text-foreground">GDPR Compliant</span>
               </div>
               <div className="flex items-center gap-2 bg-accent/50 rounded-full px-3 py-2">
-                <CheckCircle className="w-4 h-4 text-tamara-primary flex-shrink-0" />
+                <div className="w-5 h-5 flex-shrink-0">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" fill="hsl(var(--tamara-primary))" opacity="0.15"/>
+                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="12" cy="12" r="3" stroke="hsl(var(--tamara-primary))" strokeWidth="2"/>
+                    <path d="M12 9V12" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
+                  </svg>
+                </div>
                 <span className="text-foreground">Low Bandwidth</span>
               </div>
               <div className="flex items-center gap-2 bg-accent/50 rounded-full px-3 py-2">
-                <CheckCircle className="w-4 h-4 text-tamara-primary flex-shrink-0" />
+                <div className="w-5 h-5 flex-shrink-0">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="4" width="16" height="16" rx="2" fill="hsl(var(--tamara-primary))" opacity="0.15"/>
+                    <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M14 2V8H20" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M8 13H16" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M8 17H16" stroke="hsl(var(--tamara-primary))" strokeWidth="2" strokeLinecap="round"/>
+                  </svg>
+                </div>
                 <span className="text-foreground">Full Audit Trail</span>
               </div>
             </div>
