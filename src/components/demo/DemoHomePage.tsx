@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import demoHeroIllustration from '@/assets/demo-hero-illustration.png';
 
 interface DemoHomePageProps {
   onNextPage: () => void;
@@ -55,6 +56,13 @@ export const DemoHomePage: React.FC<DemoHomePageProps> = ({ onNextPage }) => {
     <div className="space-y-16 p-8">
       {/* Hero Section */}
       <section className="text-center py-16">
+        <div className="max-w-4xl mx-auto mb-8">
+          <img 
+            src={demoHeroIllustration} 
+            alt="Ilustrasi sistem operasional hotel Tamara" 
+            className="w-full h-auto rounded-2xl shadow-2xl"
+          />
+        </div>
         <h1 className="text-5xl font-bold mb-6">
           Tamara
         </h1>
