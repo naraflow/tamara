@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, MessageSquare, Shield, Package, Star, BarChart3, Clock, Smartphone, Users, Settings, DollarSign, FileText } from "lucide-react";
+import heroHotelRoom from "@/assets/hero-hotel-room.jpg";
 
 const Index = () => {
   const [currentLang, setCurrentLang] = useState<'id' | 'en'>('id');
@@ -281,60 +282,19 @@ const Index = () => {
       <main>
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 relative overflow-hidden">
-        {/* Abstract Gradient Shapes - Bold & Thick */}
+        {/* Hotel Room Background Image */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-10 left-5 w-96 h-96 bg-gradient-to-br from-yellow-400/70 to-amber-600/70 rounded-[50%] blur-2xl"></div>
-          <div className="absolute bottom-10 right-5 w-[450px] h-[450px] bg-gradient-to-tr from-emerald-500/70 to-teal-600/70 rounded-[50%] blur-2xl"></div>
-          <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-gradient-to-bl from-yellow-500/60 to-green-600/60 rounded-[50%] blur-2xl"></div>
-          <div className="absolute top-20 right-1/4 w-80 h-80 bg-gradient-to-tr from-lime-400/60 to-emerald-500/60 rounded-[50%] blur-2xl"></div>
-        </div>
-        
-        {/* Floating Icons */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Bell Icon - Service */}
-          <div className="absolute top-32 right-20 animate-[float_6s_ease-in-out_infinite]">
-            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-70 drop-shadow-2xl">
-              <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="hsl(var(--tamara-700))" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="hsl(var(--tamara-700))" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-          
-          {/* Checkmark Icon - Completion */}
-          <div className="absolute bottom-40 left-16 animate-[float_8s_ease-in-out_infinite_2s]">
-            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-70 drop-shadow-2xl">
-              <path d="M22 11.08V12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C14.23 2 16.28 2.79 17.88 4.1" stroke="hsl(var(--tamara-700))" strokeWidth="3" strokeLinecap="round"/>
-              <path d="M22 4L12 14.01L9 11.01" stroke="hsl(var(--tamara-700))" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-          
-          {/* Clock Icon - Speed */}
-          <div className="absolute top-48 left-24 animate-[float_7s_ease-in-out_infinite_1s]">
-            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-70 drop-shadow-2xl">
-              <circle cx="12" cy="12" r="10" stroke="hsl(var(--tamara-700))" strokeWidth="3"/>
-              <path d="M12 6V12L16 14" stroke="hsl(var(--tamara-700))" strokeWidth="3" strokeLinecap="round"/>
-            </svg>
-          </div>
-          
-          {/* Small accent icon - top left */}
-          <div className="absolute top-24 left-1/4 animate-[float_5s_ease-in-out_infinite_3s]">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-60 drop-shadow-xl">
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="hsl(var(--tamara-700))" strokeWidth="3"/>
-            </svg>
-          </div>
-          
-          {/* Small accent icon - bottom right */}
-          <div className="absolute bottom-32 right-1/4 animate-[float_6s_ease-in-out_infinite_4s]">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-60 drop-shadow-xl">
-              <rect x="3" y="3" width="7" height="7" rx="1" stroke="hsl(var(--tamara-700))" strokeWidth="3"/>
-              <rect x="14" y="3" width="7" height="7" rx="1" stroke="hsl(var(--tamara-700))" strokeWidth="3"/>
-              <rect x="3" y="14" width="7" height="7" rx="1" stroke="hsl(var(--tamara-700))" strokeWidth="3"/>
-              <rect x="14" y="14" width="7" height="7" rx="1" stroke="hsl(var(--tamara-700))" strokeWidth="3"/>
-            </svg>
-          </div>
+          <img 
+            src={heroHotelRoom} 
+            alt="Modern hotel room" 
+            className="w-full h-full object-cover rounded-3xl"
+          />
+          {/* Dark overlay for text contrast */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50 rounded-3xl"></div>
         </div>
         
         <div className="text-center max-w-4xl mx-auto mb-12 relative z-10">
-            <h1 className="text-5xl sm:text-6xl font-black leading-tight text-gray-900 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
+            <h1 className="text-5xl sm:text-6xl font-black leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
               {t('hero.title')}
             </h1>
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
