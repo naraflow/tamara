@@ -8,30 +8,30 @@ export const DemoHomePage: React.FC<DemoHomePageProps> = ({
   onNextPage
 }) => {
   const kpiCards = [{
-    title: 'Fast Response',
-    value: '< 30 min',
-    description: 'Housekeeping requests resolved quickly.'
+    title: 'Respons Cepat',
+    value: '< 30 menit',
+    description: 'Permintaan housekeeping diselesaikan dengan cepat.'
   }, {
-    title: 'Smart Routing',
-    value: '98% accurate',
-    description: 'Automatic department assignment.'
+    title: 'Routing Pintar',
+    value: '98% akurat',
+    description: 'Penugasan departemen otomatis.'
   }, {
-    title: 'Guest Satisfaction',
-    value: '10% increase',
-    description: 'Better service, happier guests.'
+    title: 'Kepuasan Tamu',
+    value: '10% meningkat',
+    description: 'Layanan lebih baik, tamu lebih puas.'
   }];
   const workflowSteps = [{
     number: 1,
-    title: 'Guest Reports Issue',
-    description: 'Guests send complaints via WhatsApp in plain language. Example: "AC not working in room 501."'
+    title: 'Tamu Melaporkan Masalah',
+    description: 'Tamu mengirim keluhan via WhatsApp dalam bahasa alami. Contoh: "AC tidak dingin di kamar 501."'
   }, {
     number: 2,
-    title: 'Auto-Routing',
-    items: ['AI classifies the issue (e.g., "AC problem" → Engineering)', 'Work Order created automatically in your system', 'Staff receives instant notification']
+    title: 'Routing Otomatis',
+    items: ['AI mengklasifikasi masalah (mis. "masalah AC" → Engineering)', 'Work Order dibuat otomatis di sistem Anda', 'Staf menerima notifikasi instan']
   }, {
     number: 3,
-    title: 'Real-Time Updates',
-    items: ['Guest gets status updates via WhatsApp', 'Manager tracks SLA compliance on dashboard', 'Automatic escalation for overdue tasks']
+    title: 'Update Real-Time',
+    items: ['Tamu mendapat update status via WhatsApp', 'Manajer melacak kepatuhan SLA di dashboard', 'Eskalasi otomatis untuk tugas yang terlambat']
   }];
   return <div className="space-y-16 p-8">
       {/* Hero Section */}
@@ -42,10 +42,10 @@ Sistem Penanganan Keluhan Tamu Hotel
 
 Penanganan keluhan instan melalui WhatsApp. Sederhana. Cepat. Efektif.</h1>
         <p className="text-2xl text-tamara-primary font-semibold mb-4">
-          Hotel Guest Complaint Resolution
+          Resolusi Keluhan Tamu Hotel
         </p>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Instant complaint handling through WhatsApp. Simple. Fast. Effective.
+          Penanganan keluhan instan melalui WhatsApp. Sederhana. Cepat. Efektif.
         </p>
       </section>
 
@@ -61,7 +61,7 @@ Penanganan keluhan instan melalui WhatsApp. Sederhana. Cepat. Efektif.</h1>
       {/* Workflow Section */}
       <section>
         <h2 className="text-3xl font-bold text-center mb-12">
-          How It Works
+          Cara Kerja
         </h2>
 
         <div className="space-y-8">
@@ -93,7 +93,7 @@ Penanganan keluhan instan melalui WhatsApp. Sederhana. Cepat. Efektif.</h1>
       {/* CTA */}
       <section className="text-center py-12">
         <Button onClick={onNextPage} className="bg-tamara-primary hover:bg-tamara-600 text-white px-10 py-7 text-lg rounded-full shadow-lg hover:shadow-xl transition-all">
-          See Interactive Demo →
+          Lihat Demo Interaktif →
         </Button>
       </section>
     </div>;
