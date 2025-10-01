@@ -95,10 +95,10 @@ export const DemoInteractivePage: React.FC<DemoInteractivePageProps> = ({ onNext
     <div className="space-y-8 p-8">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">
-          Live Simulation
+          Simulasi Langsung
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Watch how guests raise complaints and staff receives instant notifications.
+          Lihat bagaimana tamu mengajukan keluhan dan staf menerima notifikasi instan.
         </p>
       </div>
 
@@ -107,10 +107,10 @@ export const DemoInteractivePage: React.FC<DemoInteractivePageProps> = ({ onNext
         <Card className="p-6 shadow-xl bg-white">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-semibold">
-              Guest Side
+              Sisi Tamu
             </h2>
             <Button variant="ghost" size="sm" onClick={resetDemo} className="text-tamara-primary">
-              Reset
+              Ulang
             </Button>
           </div>
 
@@ -168,7 +168,7 @@ export const DemoInteractivePage: React.FC<DemoInteractivePageProps> = ({ onNext
         {/* PIC Notification Mockup */}
         <Card className="p-6 shadow-xl bg-white">
           <h2 className="text-xl font-semibold mb-4">
-            Staff Side
+            Sisi Staf
           </h2>
 
           <div className="h-96 bg-tamara-50/30 rounded-lg p-4 space-y-4 overflow-y-auto">
@@ -237,7 +237,7 @@ export const DemoInteractivePage: React.FC<DemoInteractivePageProps> = ({ onNext
           onClick={onNextPage}
           className="bg-tamara-primary hover:bg-tamara-600 text-white px-10 py-7 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
         >
-          View SLA Dashboard →
+          Lihat Dashboard SLA →
         </Button>
       </div>
     </div>

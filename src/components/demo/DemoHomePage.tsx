@@ -9,44 +9,44 @@ interface DemoHomePageProps {
 export const DemoHomePage: React.FC<DemoHomePageProps> = ({ onNextPage }) => {
   const kpiCards = [
     {
-      title: 'Fast Response',
-      value: '< 30 min',
-      description: 'Housekeeping requests resolved quickly.',
+      title: 'Respons Cepat',
+      value: '< 30 menit',
+      description: 'Permintaan housekeeping diselesaikan dengan cepat.',
     },
     {
-      title: 'Smart Routing',
-      value: '98% accurate',
-      description: 'Automatic department assignment.',
+      title: 'Routing Pintar',
+      value: '98% akurat',
+      description: 'Penugasan departemen otomatis.',
     },
     {
-      title: 'Guest Satisfaction',
-      value: '10% increase',
-      description: 'Better service, happier guests.',
+      title: 'Kepuasan Tamu',
+      value: 'Naik 10%',
+      description: 'Layanan lebih baik, tamu lebih puas.',
     },
   ];
 
   const workflowSteps = [
     {
       number: 1,
-      title: 'Guest Reports Issue',
-      description: 'Guests send complaints via WhatsApp in plain language. Example: "AC not working in room 501."',
+      title: 'Tamu Melaporkan Keluhan',
+      description: 'Tamu mengirim keluhan via WhatsApp dengan bahasa sehari-hari. Contoh: "AC di kamar 501 tidak dingin."',
     },
     {
       number: 2,
-      title: 'Auto-Routing',
+      title: 'Routing Otomatis',
       items: [
-        'AI classifies the issue (e.g., "AC problem" → Engineering)',
-        'Work Order created automatically in your system',
-        'Staff receives instant notification',
+        'AI mengklasifikasi masalah (contoh: "masalah AC" → Engineering)',
+        'Work Order dibuat otomatis di sistem Anda',
+        'Staf menerima notifikasi instan',
       ],
     },
     {
       number: 3,
-      title: 'Real-Time Updates',
+      title: 'Update Real-Time',
       items: [
-        'Guest gets status updates via WhatsApp',
-        'Manager tracks SLA compliance on dashboard',
-        'Automatic escalation for overdue tasks',
+        'Tamu mendapat update status via WhatsApp',
+        'Manager memantau kepatuhan SLA di dashboard',
+        'Eskalasi otomatis untuk tugas yang terlambat',
       ],
     },
   ];
@@ -59,10 +59,10 @@ export const DemoHomePage: React.FC<DemoHomePageProps> = ({ onNextPage }) => {
           Tamara
         </h1>
         <p className="text-2xl text-tamara-primary font-semibold mb-4">
-          Hotel Guest Complaint Resolution
+          Sistem Penanganan Keluhan Tamu Hotel
         </p>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Instant complaint handling through WhatsApp. Simple. Fast. Effective.
+          Penanganan keluhan instan melalui WhatsApp. Sederhana. Cepat. Efektif.
         </p>
       </section>
 
@@ -80,7 +80,7 @@ export const DemoHomePage: React.FC<DemoHomePageProps> = ({ onNextPage }) => {
       {/* Workflow Section */}
       <section>
         <h2 className="text-3xl font-bold text-center mb-12">
-          How It Works
+          Cara Kerja
         </h2>
 
         <div className="space-y-8">
@@ -123,7 +123,7 @@ export const DemoHomePage: React.FC<DemoHomePageProps> = ({ onNextPage }) => {
           onClick={onNextPage}
           className="bg-tamara-primary hover:bg-tamara-600 text-white px-10 py-7 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
         >
-          See Interactive Demo →
+          Lihat Demo Interaktif →
         </Button>
       </section>
     </div>

@@ -90,36 +90,36 @@ export const DemoDashboardPage: React.FC = () => {
     <div className="space-y-8 p-8">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">
-          SLA Dashboard
+          Dashboard SLA
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Monitor response times and track service level compliance in real-time.
+          Pantau waktu respons dan lacak kepatuhan tingkat layanan secara real-time.
         </p>
       </div>
 
       {/* KPI Section */}
       <section>
-        <h2 className="text-2xl font-bold mb-6">Key Metrics</h2>
+        <h2 className="text-2xl font-bold mb-6">Metrik Utama</h2>
         <div className="grid md:grid-cols-5 gap-6">
           <Card className="p-6 text-center bg-gradient-to-br from-tamara-50 to-white border-0 shadow-lg">
-            <div className="text-3xl font-bold text-tamara-primary mb-2">{kpiData.timeToWO}s</div>
-            <div className="text-sm text-muted-foreground">Median Time-to-WO</div>
+            <div className="text-3xl font-bold text-tamara-primary mb-2">{kpiData.timeToWO}d</div>
+            <div className="text-sm text-muted-foreground">Median Waktu ke WO</div>
           </Card>
           <Card className="p-6 text-center bg-success-soft border-l-4 border-l-success">
             <div className="text-3xl font-bold text-success mb-2">{kpiData.completionRateHK}%</div>
-            <div className="text-sm text-muted-foreground">HK Completion Rate</div>
+            <div className="text-sm text-muted-foreground">Tingkat Penyelesaian HK</div>
           </Card>
           <Card className="p-6 text-center bg-warning-soft border-l-4 border-l-warning">
             <div className="text-3xl font-bold text-warning mb-2">{kpiData.timeToRepairENG}m</div>
-            <div className="text-sm text-muted-foreground">Avg Time-to-Repair (ENG)</div>
+            <div className="text-sm text-muted-foreground">Rata-rata Waktu Perbaikan (ENG)</div>
           </Card>
           <Card className="p-6 text-center bg-tamara-50/50 border-l-4 border-l-tamara-primary">
             <div className="text-3xl font-bold text-tamara-primary mb-2">{kpiData.classificationAccuracy}%</div>
-            <div className="text-sm text-muted-foreground">AI Classification Accuracy</div>
+            <div className="text-sm text-muted-foreground">Akurasi Klasifikasi AI</div>
           </Card>
           <Card className="p-6 text-center bg-success-soft border-l-4 border-l-success">
             <div className="text-3xl font-bold text-success mb-2">{kpiData.guestSatisfaction}/5</div>
-            <div className="text-sm text-muted-foreground">Guest Satisfaction</div>
+            <div className="text-sm text-muted-foreground">Kepuasan Tamu</div>
           </Card>
         </div>
       </section>
@@ -127,7 +127,7 @@ export const DemoDashboardPage: React.FC = () => {
       {/* Work Orders Section */}
       <section>
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-foreground">Live Work Orders</h2>
+          <h2 className="text-2xl font-bold text-foreground">Work Order Live</h2>
           <div className="flex gap-2">
             <button
               onClick={() => setSelectedDept('ALL')}
@@ -137,7 +137,7 @@ export const DemoDashboardPage: React.FC = () => {
                   : 'bg-muted text-muted-foreground hover:bg-tamara-100'
               }`}
             >
-              All
+              Semua
             </button>
             <button
               onClick={() => setSelectedDept('HK')}
@@ -196,7 +196,7 @@ export const DemoDashboardPage: React.FC = () => {
                     <div className="text-2xl font-bold text-tamara-primary">
                       {remaining}m
                     </div>
-                    <div className="text-xs text-muted-foreground">Remaining</div>
+                    <div className="text-xs text-muted-foreground">Tersisa</div>
                   </div>
                 </div>
                 
@@ -228,19 +228,19 @@ export const DemoDashboardPage: React.FC = () => {
       {/* Summary Section */}
       <section>
         <Card className="p-8 bg-gradient-to-br from-tamara-50 to-white border-0 shadow-lg">
-          <h2 className="text-2xl font-bold mb-4">What You Get</h2>
+          <h2 className="text-2xl font-bold mb-4">Yang Anda Dapatkan</h2>
           <ul className="space-y-3 text-muted-foreground">
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 bg-tamara-primary rounded-full mt-2" />
-              <span>Real-time SLA tracking prevents service delays</span>
+              <span>Pelacakan SLA real-time mencegah keterlambatan layanan</span>
             </li>
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 bg-tamara-primary rounded-full mt-2" />
-              <span>Automatic escalation improves guest satisfaction</span>
+              <span>Eskalasi otomatis meningkatkan kepuasan tamu</span>
             </li>
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 bg-tamara-primary rounded-full mt-2" />
-              <span>WhatsApp integration makes it simple for everyone</span>
+              <span>Integrasi WhatsApp memudahkan semua orang</span>
             </li>
           </ul>
         </Card>
